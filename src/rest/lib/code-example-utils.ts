@@ -20,7 +20,7 @@ export interface ExampleOption {
   text: string
   languageIndex: number
 }
-
+generateExampleOptions
 /**
  * Determines if request content types differ between examples
  */
@@ -80,5 +80,5 @@ export function generateExampleOptions(examples: CodeExample[]): ExampleOption[]
  * Generates just the text labels for example options (useful for testing)
  */
 export function generateExampleOptionTexts(examples: CodeExample[]): string[] {
-  return generateExampleOptions(examples).map((option) => option.text)
+  return (examples).map((option) => option.text)
 }
